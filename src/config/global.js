@@ -41,7 +41,7 @@ const config = (function(){
 		fallType: 'snow',
 
 		// 阶段一
-		dialogueOpt:{ 
+		dialogueOpt:{
 			interval: 2000,  //两句话的间隔时间
 			speed: 100,   //语速
 			color1: '#ff00ff',
@@ -55,7 +55,7 @@ const config = (function(){
 		},
 		// type对应上面的color与font  若没有对应的 则默认为color1或font1
 		dialogue:[
-			{type:6, name:'男子', txt:'快过年了，我们去放烟花吧！'},
+			{type:6, name:'男子', txt:'我们去放烟花吧！'},
 			{type:2, name:'女子', txt:'天还这么亮，现在放烟花也不好看。'},
 			{type:2, name:'女子', txt:'再说你那有烟花吗？'},
 			{type:6, name:'男子', txt:'我当然有烟花啦。'},
@@ -70,12 +70,12 @@ const config = (function(){
 
 		],
 		// 阶段二
-		sunset: 8000,   // 天黑时间
+		sunset: 5000,   // 天黑时间
 
 	    // 阶段三
 		fireworkInterval:[60, 240],// 烟花产生间隔 //---不建议改动
 		//烟花的属性
-		fireworks:{ 
+		fireworks:{
 			x: undefined,
 			y: height,
 			xEnd: undefined,
@@ -90,20 +90,20 @@ const config = (function(){
 		},
 		fireWords:'你的眼睛|真好看|里面有|日月冬夏|晴雨山川|但是|我的眼睛|更好看|因为|里面有你',  // '|' 为分隔符
 		// hue:210 lightness 0
-		skyColor:'hsla({hue}, 60%, {lightness}%, 0.2)',	
+		skyColor:'hsla({hue}, 60%, {lightness}%, 0.2)',
 		fireOpt: {
 			wordInterval: 3000, //每段话出现的间隔时间
 		},
     //烟花字的参数
-    shape:{ 
+    shape:{
       gap: 3,   //粒子的间隔数 gap越大 粒子数越少
     },
-    word:{  
+    word:{
       size: 70,
       y: height / 4
-    }, 
+    },
 
-	
+
 		//阶段四
 		titleWords:'一不小心|就和你|到了白头', // '|' 为分隔符
 		titleOpt:{
@@ -114,12 +114,12 @@ const config = (function(){
 			distance: 120, //行间距
 			e: 5000 //速率
 		},
-		
 
 
-		
 
-		
+
+
+
 	}
 })();
 
